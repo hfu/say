@@ -2,7 +2,7 @@ Rake::TaskManager.record_task_metadata = true
 SAY = true
 
 def say(t)
-  sh "say #{t.full_comment}", verbose: false
+  sh "say #{t.full_comment}", verbose: false if SAY
 end
 
 desc "fitter, happier"
